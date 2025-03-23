@@ -1,0 +1,94 @@
+.weather-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Rain styles */
+.rain-drop {
+  position: absolute;
+  width: 2px;
+  height: 20px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8));
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+/* Snow styles */
+.snow-flake {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Cloud styles */
+.cloud {
+  position: absolute;
+  width: 120px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50px;
+  box-shadow: 0 8px 32px rgba(255, 255, 255, 0.1);
+}
+
+.cloud::before {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 25px;
+  width: 60px;
+  height: 60px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.cloud::after {
+  content: '';
+  position: absolute;
+  top: -35px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+/* Sun styles */
+.sun {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  width: 80px;
+  height: 80px;
+  background: radial-gradient(circle, rgba(255, 201, 14, 1) 30%, rgba(255, 201, 14, 0.5) 70%, rgba(255, 201, 14, 0) 100%);
+  border-radius: 50%;
+  box-shadow: 0 0 40px rgba(255, 201, 14, 0.8), 0 0 80px rgba(255, 201, 14, 0.5);
+}
+
+/* Lightning styles */
+.lightning {
+  position: absolute;
+  width: 3px;
+  height: 80px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 225, 0, 0.8));
+  box-shadow: 0 0 20px rgba(255, 225, 0, 0.8);
+  clip-path: polygon(50% 0%, 20% 50%, 50% 50%, 30% 100%, 80% 40%, 50% 40%, 70% 0%);
+  transform: scale(7);
+}
+
+/* Fog styles */
+.fog {
+  position: absolute;
+  width: 200px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+  filter: blur(10px);
+} 
