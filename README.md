@@ -1,8 +1,8 @@
-# Weather Application
+# SkySync
 
 A visually stunning, high-end weather application built with React that combines elegance, interactivity, and real-time functionality.
 
-![Weather App Screenshot](https://via.placeholder.com/800x400?text=Weather+App+Screenshot)
+![SkySync Screenshot](/public/HomeScreen.png)
 
 ## Features
 
@@ -28,8 +28,8 @@ A visually stunning, high-end weather application built with React that combines
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/weather-app.git
-   cd weather-app
+   git clone https://github.com/yourusername/skysync.git
+   cd skysync
    ```
 
 2. Install dependencies
@@ -62,4 +62,4 @@ A visually stunning, high-end weather application built with React that combines
 ## Connect with Me
 
 - Portfolio: [hamzazily.vercel.app](https://hamzazily.vercel.app)
-- GitHub: [Your GitHub Profile](https://github.com/Akamizzy)
+- GitHub: [GitHub Profile](https://github.com/Akamizzy)
