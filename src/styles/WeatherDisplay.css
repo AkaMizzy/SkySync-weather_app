@@ -159,6 +159,37 @@
   opacity: 0.7;
 }
 
+.country-info {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 4px 10px;
+  margin-left: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.country-info:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.country-flag {
+  width: 28px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+  filter: drop-shadow(0 0 4px rgba(255, 255, 255, 0.3));
+  transition: transform 0.3s ease;
+}
+
+.country-info:hover .country-flag {
+  transform: scale(1.1);
+}
+
 @media (max-width: 768px) {
   .weather-display-header {
     flex-direction: column;

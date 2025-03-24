@@ -4,6 +4,33 @@ import '../styles/Forecast.css';
 const Forecast = ({ forecastData }) => {
   if (!forecastData) return null;
 
+  // Function to map OpenWeather icon codes to weatherbit codes (same as WeatherDisplay)
+  const getEnhancedIconCode = (iconCode) => {
+    // Map OpenWeather icon codes to weatherbit codes (which look better)
+    const iconMap = {
+      '01d': 'c01d', // clear sky day
+      '01n': 'c01n', // clear sky night
+      '02d': 'c02d', // few clouds day
+      '02n': 'c02n', // few clouds night
+      '03d': 'c03d', // scattered clouds day
+      '03n': 'c03n', // scattered clouds night
+      '04d': 'c04d', // broken clouds day
+      '04n': 'c04n', // broken clouds night
+      '09d': 't04d', // shower rain day
+      '09n': 't04n', // shower rain night
+      '10d': 'r01d', // rain day
+      '10n': 'r01n', // rain night
+      '11d': 't05d', // thunderstorm day
+      '11n': 't05n', // thunderstorm night
+      '13d': 's01d', // snow day
+      '13n': 's01n', // snow night
+      '50d': 'a05d', // mist day
+      '50n': 'a05n', // mist night
+    };
+    
+    return iconMap[iconCode] || 'c01d'; // Default to clear day if mapping not found
+  };
+
   // Group forecast by day and filter for noon time
   const groupedForecast = [];
   const today = new Date().toLocaleDateString();
@@ -24,7 +51,8 @@ const Forecast = ({ forecastData }) => {
           date,
           temp: item.main.temp,
           weather: item.weather[0],
-          icon: `http://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`
+          // Use the same icon source as WeatherDisplay
+          icon: `https://weatherbit.io/static/img/icons/${getEnhancedIconCode(item.weather[0].icon)}.png`
         });
       }
     }

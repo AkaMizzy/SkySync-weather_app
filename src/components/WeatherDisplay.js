@@ -61,7 +61,7 @@ const WeatherDisplay = ({ weatherData }) => {
           transition={{ duration: 0.5, delay: 0.4 }}
           className="city-name"
         >
-          {name}, {country}
+          {name}, <span className="country-info">{country} <img src={`https://flagsapi.com/${country}/flat/64.png`} alt={country} className="country-flag" /></span>
         </motion.h2>
         <motion.div 
           className="weather-icon-container"
