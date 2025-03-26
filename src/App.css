@@ -109,3 +109,18 @@ body {
     padding: 15px;
   }
 }
+
+/* Fix for Leaflet marker icons */
+.leaflet-default-icon-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png);
+}
+
+.leaflet-default-shadow-path {
+  background-image: url(https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png);
+}
+
+/* Fix for Leaflet control positioning with scrolling containers */
+.leaflet-control-container .leaflet-top,
+.leaflet-control-container .leaflet-bottom {
+  z-index: 10;
+}

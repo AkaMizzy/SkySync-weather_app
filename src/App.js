@@ -7,6 +7,7 @@ import SearchBar from './components/SearchBar';
 import Forecast from './components/Forecast';
 import LoadingScreen from './components/LoadingScreen';
 import WeatherAnimation from './components/WeatherAnimation';
+import MapSection from './components/MapSection';
 
 function App() {
   const [weatherData, setWeatherData] = useState(null);
@@ -82,6 +83,7 @@ function App() {
           <>
             <WeatherDisplay weatherData={weatherData} />
             <Forecast forecastData={forecastData} />
+            <MapSection weatherData={weatherData} />
           </>
         )}
       </motion.div>
