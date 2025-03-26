@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { FaTemperatureHigh, FaWind, FaCloudRain, FaCompass, FaWater, FaSun, FaMoon } from 'react-icons/fa';
+import { FaWind, FaCloudRain, FaCompass, FaWater, FaSun, FaMoon } from 'react-icons/fa';
 import '../styles/WeatherDisplay.css';
 
 const WeatherDisplay = ({ weatherData }) => {
