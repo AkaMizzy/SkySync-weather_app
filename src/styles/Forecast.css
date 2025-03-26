@@ -1,13 +1,13 @@
 .forecast-container {
   width: 100%;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.25);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
-  color: white;
+  color: #000;
 }
 
 .forecast-title {
@@ -16,6 +16,7 @@
   margin-bottom: 25px;
   position: relative;
   display: inline-block;
+  color: #000;
 }
 
 .forecast-title::after {
@@ -41,9 +42,9 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 15px;
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.3);
   border-radius: 16px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
 }
@@ -51,33 +52,37 @@
 .forecast-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .forecast-day {
   font-size: 1.2rem;
   font-weight: 600;
   margin: 0;
-  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  color: #000;
 }
 
 .forecast-date {
   font-size: 0.9rem;
   opacity: 0.7;
   margin-top: 2px;
+  color: #000;
 }
 
 .forecast-icon {
   width: 60px;
   height: 60px;
   margin: 10px 0;
+  filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
 }
 
 .forecast-temp {
   font-size: 1.5rem;
   font-weight: 700;
   margin-bottom: 5px;
+  color: #000;
 }
 
 .forecast-description {
@@ -85,6 +90,7 @@
   text-align: center;
   opacity: 0.8;
   text-transform: capitalize;
+  color: #000;
 }
 
 @media (max-width: 768px) {

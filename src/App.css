@@ -86,15 +86,15 @@ body {
 
 /* Error message */
 .error-message {
-  color: #ff6b6b;
-  background: rgba(255, 107, 107, 0.1);
+  color: #d32f2f;
+  background: rgba(255, 255, 255, 0.9);
   padding: 15px;
   border-radius: 12px;
   text-align: center;
   font-weight: 500;
   margin: 20px 0;
-  border: 1px solid rgba(255, 107, 107, 0.3);
-  box-shadow: 0 5px 15px rgba(255, 107, 107, 0.1);
+  border: 1px solid rgba(211, 47, 47, 0.3);
+  box-shadow: 0 5px 15px rgba(211, 47, 47, 0.1);
 }
 
 /* Responsive design */
